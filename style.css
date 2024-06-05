@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("images/maincover.jpg");
+  height: 600px;
+  /* background-position: left -200px bottom; */
+  /* to get the zoom effect */
+  background-size: max(1080px, 100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* border: 1px solid black; */
+  position: relative;
+  /* box-shadow: inset 0px 0px 500px 50px; */
+}
+
+.main .box {
+  position: absolute;
+  top: 0px;
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.65;
+  box-shadow: inset 0px 0px 15px 30px;
+}
+
+nav {
+  height: 95px;
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid yellow; */
+}
+
+nav img {
+  color: red;
+  width: 120px;
+  position: relative;
+  z-index: 5;
+}
+
+.mainc {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  display: flex;
+  height: 84%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 3;
+  gap: 23px;
+  bottom: 35px;
+  padding: 0px 25px;
+}
+/* immediate first child */
+.mainc > :first-child {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.mainc > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.mainc > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 6px;
+  background-color: rgb(44, 42, 42);
+}
+
+.btn {
+  padding: 8px 12px;
+  /* margin: 0px 5px; */
+}
+.eng {
+  /* box-sizing: border-box; */
+  width: 112px;
+  height: 32px;
+  border-radius: 4px;
+  position: relative;
+  right: 30px;
+  padding: 8px 12px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(19, 19, 19, 0.3);
+  color: white;
+  border-style: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  text-align: center;
+}
+
+.eng:active {
+  border: 2px solid gray;
+  cursor: pointer;
+}
+
+.redsm {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  position: relative;
+  font-weight: bold;
+  z-index: 1;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* buttons */
+.buttons{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redbg {
+  padding: 10px 18px;
+  background-color: rgb(229, 9, 20);
+  font-weight: bold;
+  border-radius: 4px;
+  border-style: none;
+  color: white;
+}
+
+.email {
+  box-sizing: border-box;
+  padding: 6px;
+  border-radius: 4px;
+  border-style: none;
+  height: 36px;
+  width: 230px;
+  background: transparent;
+  border: 2px solid gray;
+}
+
+/* first section */
+
+.first {
+  width: 70vw;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  /* flex-wrap: wrap; */
+  padding: 4.5em 0px;
+}
+
+/* @media screen and (max-width: 800px){
+  
+} */
+
+.secimage {
+  position: relative;
+}
+.secimage img {
+  width: 400px;
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+
+.secimage video {
+  position: absolute;
+  top: 64px;
+  right: 56px;
+  width: 288px;
+}
+
+.contentf {
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  padding: 32px 0px;
+}
+
+.contentf :first-child {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.contentf :nth-child(2) {
+  font-size: 24px;
+}
+.contentf :nth-child(3) {
+  font-size: 24px;
+}
+
+/* second section */
+.stranger img {
+  width: 400px;
+}
+
+/* third section video */
+/* .tvid video{
+  top: 56px;
+    right: 121px;
+    width: 400px;
+    
+} */
+
+/* faq sections */
+
+.faq h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 36px auto;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.faqbox {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 10px auto;
+  max-width: 75vw;
+  background-color: rgb(49, 49, 49);
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+.faq :hover {
+  background-color: rgba(102, 102, 102, 0.854);
+  transition: all 0.2s ease-out;
+}
+
+.membership h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 36px auto;
+  font-size: 20px;
+  font-weight: 100;
+}
+.restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 52px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  max-width: 80vw;
+  margin: 32px auto;
+  /* text-align: left; */
+}
+
+footer span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+
+  nav{
+    max-width: 90vw;
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mainc > :first-child {
+    font-weight: 900;
+    font-size: 32px;
+    /* text-align: center; */
+  }
+  .mainc > :nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    /* text-align: center; */
+  }
+  .mainc > :nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    /* text-align: center; */
+  }
+
+  .contentf{
+    padding: 32px;
+  }
+
+  .contentf :first-child {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .contentf :nth-child(2) {
+    font-size: 18px;
+  }
+  .contentf :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .faq h2{
+    font-size: 32px;
+  }
+
+  .membership h4{
+    padding: 24px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kidss img{
+    width: 200px;
+  }
+  .stranger img{
+    width: 200px;
+  }
+}
+
+.footeritem {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footeritem a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.langfoot {
+  position: relative;
+  left: 30px;
+}
+
+.last {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 0px;
+  color: rgba(255, 255, 255, 0.7);
+}
